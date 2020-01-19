@@ -306,7 +306,7 @@
 		<property name="Collide"             value="melee,bullet,arrow,rocket"/>
 		<property name="Shape"               value="ModelEntity"/>
 		<property name="CustomIcon"          value="cntFetchQuestSatchel"/>
-		<property name="Model"               value="Entities/LootContainers/loot_satchelPrefab"/>
+		<property name="Model"               value="#Entities/LootContainers?loot_satchelPrefab.prefab"/>
 		<property name="Place"               value="TowardsPlacerInverted"/>
 		<property name="MaxDamage"           value="1"/>
 		<property name="CreativeMode"        value="None"/>
@@ -326,7 +326,7 @@
 		<property name="Collide"             value="melee,bullet,arrow,rocket"/>
 		<property name="Shape"               value="ModelEntity"/>
 		<property name="CustomIcon"          value="cntFetchQuestSatchel"/>
-		<property name="Model"               value="Entities/LootContainers/loot_satchelPrefab"/>
+		<property name="Model"               value="#Entities/LootContainers?loot_satchelPrefab.prefab"/>
 		<property name="Place"               value="TowardsPlacerInverted"/>
 		<property name="MaxDamage"           value="1"/>
 		<property name="CreativeMode"        value="None"/>
@@ -346,7 +346,7 @@
 		<property name="Collide"             value="melee,bullet,arrow,rocket"/>
 		<property name="Shape"               value="ModelEntity"/>
 		<property name="CustomIcon"          value="cntFetchQuestSatchel"/>
-		<property name="Model"               value="Entities/LootContainers/loot_satchelPrefab"/>
+		<property name="Model"               value="#Entities/LootContainers?loot_satchelPrefab.prefab"/>
 		<property name="Place"               value="TowardsPlacerInverted"/>
 		<property name="MaxDamage"           value="1"/>
 		<property name="CreativeMode"        value="None"/>
@@ -368,7 +368,7 @@
 		<property name="Collide"             value="melee,bullet,arrow,rocket"/>
 		<property name="Shape"               value="ModelEntity"/>
 		<property name="CustomIcon"          value="cntFetchQuestSatchel"/>
-		<property name="Model"               value="Entities/LootContainers/loot_satchelPrefab"/>
+		<property name="Model"               value="#Entities/LootContainers?loot_satchelPrefab.prefab"/>
 		<property name="Place"               value="TowardsPlacerInverted"/>
 		<property name="MaxDamage"           value="1"/>
 		<property name="CreativeMode"        value="None"/>
@@ -389,7 +389,7 @@
 		<property name="Collide"             value="melee,bullet,arrow,rocket"/>
 		<property name="Shape"               value="ModelEntity"/>
 		<property name="CustomIcon"          value="cntFetchQuestSatchel"/>
-		<property name="Model"               value="Entities/LootContainers/loot_satchelPrefab"/>
+		<property name="Model"               value="#Entities/LootContainers?loot_satchelPrefab.prefab"/>
 		<property name="Place"               value="TowardsPlacerInverted"/>
 		<property name="MaxDamage"           value="1"/>
 		<property name="CreativeMode"        value="None"/>
@@ -427,7 +427,7 @@
 		<property name="Collide"             value="melee,bullet,arrow,rocket"/>
 		<property name="Shape"               value="ModelEntity"/>
 		<property name="CustomIcon"          value="cntFetchQuestSatchel"/>
-		<property name="Model"               value="Entities/LootContainers/loot_satchelPrefab"/>
+		<property name="Model"               value="#Entities/LootContainers?loot_satchelPrefab.prefab"/>
 		<property name="Place"               value="TowardsPlacerInverted"/>
 		<property name="MaxDamage"           value="1"/>
 		<property name="CreativeMode"        value="None"/>
@@ -448,7 +448,7 @@
 		<property name="Collide"             value="melee,bullet,arrow,rocket"/>
 		<property name="Shape"               value="ModelEntity"/>
 		<property name="CustomIcon"          value="cntFetchQuestSatchel"/>
-		<property name="Model"               value="Entities/LootContainers/loot_satchelPrefab"/>
+		<property name="Model"               value="#Entities/LootContainers?loot_satchelPrefab.prefab"/>
 		<property name="Place"               value="TowardsPlacerInverted"/>
 		<property name="MaxDamage"           value="1"/>
 		<property name="CreativeMode"        value="None"/>
@@ -468,7 +468,7 @@
 		<property name="Collide"             value="melee,bullet,arrow,rocket"/>
 		<property name="Shape"               value="ModelEntity"/>
 		<property name="CustomIcon"          value="cntFetchQuestSatchel"/>
-		<property name="Model"               value="Entities/LootContainers/loot_satchelPrefab"/>
+		<property name="Model"               value="#Entities/LootContainers?loot_satchelPrefab.prefab"/>
 		<property name="Place"               value="TowardsPlacerInverted"/>
 		<property name="MaxDamage"           value="1"/>
 		<property name="CreativeMode"        value="None"/>
@@ -488,7 +488,7 @@
 		<property name="Collide"             value="melee,bullet,arrow,rocket"/>
 		<property name="Shape"               value="ModelEntity"/>
 		<property name="CustomIcon"          value="cntFetchQuestSatchel"/>
-		<property name="Model"               value="Entities/LootContainers/loot_satchelPrefab"/>
+		<property name="Model"               value="#Entities/LootContainers?loot_satchelPrefab.prefab"/>
 		<property name="Place"               value="TowardsPlacerInverted"/>
 		<property name="MaxDamage"           value="1"/>
 		<property name="CreativeMode"        value="None"/>
@@ -506,7 +506,7 @@
 		<property name="Collide"             value="melee,bullet,arrow,rocket"/>
 		<property name="Shape"               value="ModelEntity"/>
 		<property name="CustomIcon"          value="cntFetchQuestSatchel"/>
-		<property name="Model"               value="Entities/LootContainers/loot_satchelPrefab"/>
+		<property name="Model"               value="#Entities/LootContainers?loot_satchelPrefab.prefab"/>
 		<property name="Place"               value="TowardsPlacerInverted"/>
 		<property name="MaxDamage"           value="1"/>
 		<property name="CreativeMode"        value="None"/>
