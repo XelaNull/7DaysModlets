@@ -137,21 +137,21 @@
 
 	<!-- bullet casings are under valued (bundle size for both is 10) -->
 	<set xpath="/items/item[@name='resourceBulletCasing']/property[@name='EconomicValue']/@value">50</set>
-	<set xpath="/items/item[@name='resourceBulletCasingSteel']/property[@name='EconomicValue']/@value">50</set>
+	<!-- Removed for A18 <set xpath="/items/item[@name='resourceBulletCasingSteel']/property[@name='EconomicValue']/@value">50</set> -->
 
 	<!-- iron club is over valued -->
 	<set xpath="/items/item[@name='meleeClubIron']/property[@name='EconomicValue']/@value">250</set>
 
 	<!-- RATIONAL BULET VALUES = entity damage / 4 + 3 -->	
 	<set xpath="/items/item[@name='ammoBundle9mmBulletHP']/property[@name='EconomicValue']/@value">          11</set>  <!-- 32 -->
-	<set xpath="/items/item[@name='ammoBundle9mmBulletHPJHP']/property[@name='EconomicValue']/@value">       12</set>  <!-- 35 -->
-	<set xpath="/items/item[@name='ammoBundle9mmBulletAP']/property[@name='EconomicValue']/@value">     10</set>  <!-- 29 -->
+	<set xpath="/items/item[@name='ammoBundle9mmBulletAP']/property[@name='EconomicValue']/@value">       12</set>  <!-- 35 -->
+	<set xpath="/items/item[@name='ammoBundle9mmBulletBall']/property[@name='EconomicValue']/@value">     10</set>  <!-- 29 -->
 	<set xpath="/items/item[@name='ammoBundle44MagnumBulletHP']/property[@name='EconomicValue']/@value">     23</set>  <!-- 80-->
-	<set xpath="/items/item[@name='ammoBundle44MagnumBulletHPAP']/property[@name='EconomicValue']/@value">   23</set>  <!-- 80 -->
-	<set xpath="/items/item[@name='ammoBundle44MagnumBulletAP']/property[@name='EconomicValue']/@value">22</set>  <!-- 76 -->
+	<set xpath="/items/item[@name='ammoBundle44MagnumBulletAP']/property[@name='EconomicValue']/@value">   23</set>  <!-- 80 -->
+	<set xpath="/items/item[@name='ammoBundle44MagnumBulletBall']/property[@name='EconomicValue']/@value">22</set>  <!-- 76 -->
 	<set xpath="/items/item[@name='ammo762mmBulletHP']/property[@name='EconomicValue']/@value">     16</set>  <!-- 50 -->
 	<set xpath="/items/item[@name='ammo762mmBulletAP']/property[@name='EconomicValue']/@value">      16</set>  <!-- 50 -->
-	<set xpath="/items/item[@name='ammo762mmBulletAP']/property[@name='EconomicValue']/@value">15</set>  <!-- 46 -->
+	<set xpath="/items/item[@name='ammo762mmBulletBall']/property[@name='EconomicValue']/@value">15</set>  <!-- 46 -->
 	<set xpath="/items/item[@name='ammoShotgunShell']/property[@name='EconomicValue']/@value">       27</set>  <!-- 96 -->
 	<set xpath="/items/item[@name='ammoShotgunSlug']/property[@name='EconomicValue']/@value">        23</set>  <!-- 80 -->
 	<set xpath="/items/item[@name='ammoBlunderbuss']/property[@name='EconomicValue']/@value">        23</set>  <!-- 88 -->
@@ -179,7 +179,7 @@
      Code from icehot                                                                    -->
 <!-- =================================================================================== -->
 	<set xpath="/items/item[@name=                   'meleeHandMaster']/property[@class='Action0']/property[@name='DamageBlock']/@value">10</set>
-	<set xpath="/items/item[@name=                 'meleeHandZombie01']/effect_group[@name='Base Effects']/passive_effect[@name='BlockDamage']/@value">10</set>
+	<set xpath="/items/item[@name=                 'meleeHandZombie01']/effect_group[@name='meleeHandZombie01']/passive_effect[@name='BlockDamage']/@value">10</set>
 	<set xpath="/items/item[@name=            'meleeHandZombie02Feral']/property[@class='Action0']/property[@name='DamageBlock']/@value">30</set>
 	<set xpath="/items/item[@name=           'meleeHandZombieBehemoth']/property[@class='Action0']/property[@name='DamageBlock']/@value">600</set>
 	<set xpath="/items/item[@name=       'meleeHandZombieBurningFeral']/property[@class='Action0']/property[@name='DamageBlock']/@value">16</set>

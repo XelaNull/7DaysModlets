@@ -3,7 +3,7 @@
 
 <!-- replace dumb perk magazines with something less dumb -->
 <remove xpath="/lootcontainers/lootgroup[@name='books']"/>
-<remove xpath="/lootcontainers/lootgroup[@name='perkMagazines']"/>
+<remove xpath="/lootcontainers/lootgroup[@name='perkBooks']"/>
 <remove xpath="/lootcontainers/lootgroup[@name='coldfood']"/>
 <remove xpath="/lootcontainers/lootgroup[@name='shamwaySafeFiller']"/>
 
@@ -365,8 +365,8 @@
 
 <append xpath="/lootcontainers">
 	<!-- safes, weapon caches rare good loot -->
-	<lootcontainer id="11" count="1,5" size="5,4" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="1" loot_quality_template="baseTemplate">
-		<item group="ammo"                       prob="0.20" />
+	<lootcontainer id="11" count="1,5" size="5,4" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="1" loot_quality_template="qualBaseTemplate">
+		<item group="groupAmmoRegular"                       prob="0.20" />
 		<item group="ammoSteel"                  prob="0.20" />
 		<item group="weaponsBasicGuns+ammo"      prob="0.10" />
 		<item group="ToolmakingToday"            prob="0.10" />
@@ -380,7 +380,7 @@
 	</lootcontainer>
 
 	<!-- cars -->
-	<lootcontainer id="19" count="1,3" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="baseTemplate">
+	<lootcontainer id="19" count="1,3" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="qualBaseTemplate">
 		<item group="junk"                  prob="0.50"/>
 		<item group="automotive"            prob="0.20"/>
 		<item group="ammo"                  prob="0.14"/>
@@ -390,7 +390,7 @@
 	</lootcontainer>
 
 	<!-- garage stuff, tools, etc -->
-	<lootcontainer id="22" count="0,4" size="5,4" sound_open="UseActions/open_cardboard" open_time="1" sound_close="UseActions/close_cardboard" loot_quality_template="baseTemplate">
+	<lootcontainer id="22" count="0,4" size="5,4" sound_open="UseActions/open_cardboard" open_time="1" sound_close="UseActions/close_cardboard" loot_quality_template="qualBaseTemplate">
 		<item group="automotive"                       prob=".130"/>
 		<item name="resourcePaint"    count="5,40"     prob=".120"/>
 		<item name="resourcePaper"    count="4,25"     prob=".120"/>	<!-- probably old tax returns your gonna want to keep these for at least 10 years after the apocalypse -->
@@ -412,7 +412,7 @@
 	</lootcontainer>
 
 	<!-- purses -->
-	<lootcontainer id="48" count="1,5" size="4,3" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1.5" loot_quality_template="baseTemplate">
+	<lootcontainer id="48" count="1,5" size="4,3" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1.5" loot_quality_template="qualBaseTemplate">
 		<item name="resourcePaper" count="2,8"   prob="0.15" />
 		<item name="oldCash"       count="5,60"  prob="0.15" />
 		<item group="bookNovelsGroup"            prob="0.15" />
@@ -426,7 +426,7 @@
 	</lootcontainer>
 
 	<!-- bookcase -->
-	<lootcontainer id="49" count="0,8" size="4,3" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" loot_quality_template="baseTemplate">
+	<lootcontainer id="49" count="0,8" size="4,3" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" loot_quality_template="qualBaseTemplate">
 		<item name="resourcePaper" count="2,8" prob="0.2"/>
 		<item group="books"/>	
 		<item group="chessPieces" prob=".2"/>

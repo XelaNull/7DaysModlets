@@ -308,7 +308,7 @@
 <remove xpath="/recipes/recipe[@name='medicalPlasterCast']"/>
 <remove xpath="/recipes/recipe[@name='medicalSplint']"/>
 
-<insertBefore xpath="/recipes/recipe[@name='meleeBoneShiv']">
+<insertBefore xpath="/recipes/recipe[@name='meleeToolKnifeBone']">
 
 	<recipe name="medicalBandage" count="1" craft_exp_gain="20" >
 		<ingredient name="resourceCloth" count="2"/>
@@ -429,7 +429,7 @@
 
 <!-- MODTAG any base meat can be made into identical "charred meat" -->
 <set xpath="/recipes/recipe[@name='foodCharredMeat']/ingredient[@name='foodRawMeat']/@name">Raw Pork</set>
-<insertAfter xpath="/recipes/recipe[@name='flagstoneWedgeTipStairs']">
+<insertAfter xpath="/recipes/recipe[@name='flagstoneBlockVariantHelper']">
 
 <recipe name="foodBlueberryPie" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
 	<ingredient name="foodCropBlueberries" count="10"/>
