@@ -3,7 +3,7 @@
 
 <!-- replace dumb perk magazines with something less dumb -->
 <remove xpath="/lootcontainers/lootgroup[@name='books']"/>
-<remove xpath="/lootcontainers/lootgroup[@name='perkBooks']"/>
+<!-- Removed for A18 <remove xpath="/lootcontainers/lootgroup[@name='perkBooks']"/> -->
 <remove xpath="/lootcontainers/lootgroup[@name='coldfood']"/>
 <remove xpath="/lootcontainers/lootgroup[@name='shamwaySafeFiller']"/>
 

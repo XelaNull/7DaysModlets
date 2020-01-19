@@ -300,7 +300,7 @@
 <remove xpath="/recipes/recipe[@name='drugHerbalAntibiotics'][@craft_area='campfire']"/>
 <remove xpath="/recipes/recipe[@name='drugHerbalAntibiotics'][@craft_area='chemistryStation']"/>
 
-<remove xpath="/recipes/recipe[@name='medicalSnowberryExtract']"/>
+<!-- Remove for A18 <remove xpath="/recipes/recipe[@name='medicalSnowberryExtract']"/> -->
 <!-- <remove xpath="/recipes/recipe[@name='medicalAloeCream']"/> -->
 <remove xpath="/recipes/recipe[@name='medicalBandage']"/>
 <remove xpath="/recipes/recipe[@name='medicalFirstAidBandage']"/>
