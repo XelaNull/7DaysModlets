@@ -367,7 +367,7 @@
 	<!-- safes, weapon caches rare good loot -->
 	<lootcontainer id="11" count="1,5" size="5,4" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="1" loot_quality_template="qualBaseTemplate">
 		<item group="groupAmmoRegular"                       prob="0.20" />
-		<item group="ammoSteel"                  prob="0.20" />
+		<item group="groupAmmoAdvanced"                  prob="0.20" />
 		<item group="weaponsBasicGuns+ammo"      prob="0.10" />
 		<item group="ToolmakingToday"            prob="0.10" />
 		<item group="EugeneExplainsScienceBooks" prob="0.10" />

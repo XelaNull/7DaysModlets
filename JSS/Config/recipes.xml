@@ -333,10 +333,12 @@
 		<ingredient name="drinkJarRiverWater" count="1"/>
 	</recipe>
 
+<!-- Removed for A18
 	<recipe name="medicalSnowberryExtract" count="1" craft_area="chemistryStation" craft_exp_gain="20">
 		<ingredient name="resourceCropSnowberryPlant" count="1"/>
 		<ingredient name="foodCornMeal" count="1"/>
 	</recipe>
+-->
 
 	<recipe name="medicalSplint" count="1" craft_exp_gain="20">
 		<ingredient name="resourceCloth" count="2"/>
