@@ -4,27 +4,29 @@
 <!-- MODTAG increase damage of machete by 15% -->
 <!-- MODTAG increase block damage of Tazas stone axe by 20% -->
 
-<set xpath=     "/items/item[@name='meleeToolStoneAxe']/effect_group[@name='Base Effects']/passive_effect[@name='EntityDamage']/@value">10</set> 
-<set xpath="/items/item[@name='meleeToolStoneAxeTazas']/effect_group[@name='Base Effects']/passive_effect[@name='EntityDamage']/@value">12</set> 
-<set xpath=         "/items/item[@name='meleeBoneShiv']/effect_group[@name='Base Effects']/passive_effect[@name='EntityDamage']/@value">16</set>  
-<set xpath= "/items/item[@name='meleeToolHuntingKnife']/effect_group[@name='Base Effects']/passive_effect[@name='EntityDamage']/@value">18</set>  
-<set xpath=      "/items/item[@name='meleeToolMachete']/effect_group[@name='Base Effects']/passive_effect[@name='EntityDamage']/@value">23</set> 
-<set xpath=  "/items/item[@name='meleeToolFireaxeIron']/effect_group[@name='Base Effects']/passive_effect[@name='EntityDamage']/@value">26</set> 
-<set xpath= "/items/item[@name='meleeToolFireaxeSteel']/effect_group[@name='Base Effects']/passive_effect[@name='EntityDamage']/@value">30</set> 
+<set xpath=     "/items/item[@name='meleeToolStoneAxe']/effect_group[@name='meleeToolStoneAxe']/passive_effect[@name='EntityDamage']/@value">10</set> 
+<set xpath="/items/item[@name='meleeToolStoneAxeTazas']/effect_group[@name='meleeToolStoneAxeTazas']/passive_effect[@name='EntityDamage']/@value">12</set> 
+<set xpath=         "/items/item[@name='meleeToolKnifeBone']/effect_group[@name='meleeToolKnifeBone']/passive_effect[@name='EntityDamage']/@value">16</set>  
+<set xpath= "/items/item[@name='meleeToolKnifeIron']/effect_group[@name='meleeToolKnifeIron']/passive_effect[@name='EntityDamage']/@value">18</set>  
+<set xpath=      "/items/item[@name='meleeToolKnifeMachete']/effect_group[@name='meleeToolKnifeMachete']/passive_effect[@name='EntityDamage']/@value">23</set> 
+<set xpath=  "/items/item[@name='meleeToolFireaxeIron']/effect_group[@name='meleeToolFireaxeIron']/passive_effect[@name='EntityDamage']/@value">26</set> 
+<set xpath= "/items/item[@name='meleeToolFireaxeSteel']/effect_group[@name='meleeToolFireaxeSteel']/passive_effect[@name='EntityDamage']/@value">30</set> 
 
-<set xpath=     "/items/item[@name='meleeToolStoneAxe']/effect_group[@name='Base Effects']/passive_effect[@name='BlockDamage']/@value">21</set> 
-<set xpath="/items/item[@name='meleeToolStoneAxeTazas']/effect_group[@name='Base Effects']/passive_effect[@name='BlockDamage']/@value">29</set> 
-<set xpath=  "/items/item[@name='meleeToolFireaxeIron']/effect_group[@name='Base Effects']/passive_effect[@name='BlockDamage']/@value">60</set> 
-<set xpath= "/items/item[@name='meleeToolFireaxeSteel']/effect_group[@name='Base Effects']/passive_effect[@name='BlockDamage']/@value">86</set> 
+<set xpath=     "/items/item[@name='meleeToolStoneAxe']/effect_group[@name='meleeToolStoneAxe']/passive_effect[@name='BlockDamage']/@value">21</set> 
+<set xpath="/items/item[@name='meleeToolStoneAxeTazas']/effect_group[@name='meleeToolStoneAxeTazas']/passive_effect[@name='BlockDamage']/@value">29</set> 
+<set xpath=  "/items/item[@name='meleeToolFireaxeIron']/effect_group[@name='meleeToolFireaxeIron']/passive_effect[@name='BlockDamage']/@value">60</set> 
+<set xpath= "/items/item[@name='meleeToolFireaxeSteel']/effect_group[@name='meleeToolFireaxeSteel']/passive_effect[@name='BlockDamage']/@value">86</set> 
 
 
 <!-- Change damage based on quality level -->
+<!-- Removed for A18 as it already implements this
 <remove xpath="/items/item/effect_group[@name='Base Effects']/passive_effect[@name='EntityDamage'][@operation='perc_add']"/>
 <remove xpath="/items/item/effect_group[@name='Base Effects']/passive_effect[@name='BlockDamage'][@operation='perc_add']"/>
 <append xpath="/items/item/effect_group[@name='Base Effects']">
 	<passive_effect tier="1,6" value="0,1" operation="perc_add" name="EntityDamage"/>
 	<passive_effect tier="1,6" value="0,1" operation="perc_add" name="BlockDamage"/>
 </append>
+-->
 
 <!-- =================================================================================== -->
 <!-- TRADER MODS                                                                         -->
@@ -60,7 +62,7 @@
 	<set xpath="/items/item[@name='foodCornOnTheCob']/property[@name='EconomicValue']/@value">10</set>
 
 	<!-- MODTAG basic tools are not worth much but trader should still buy them because that's what he's there for -->
-	<set xpath="/items/item[@name=           'meleeBoneShiv']/property[@name='SellableToTrader']/@value">true</set>
+	<set xpath="/items/item[@name=           'meleeToolFireaxeSteel']/property[@name='SellableToTrader']/@value">true</set>
 	<set xpath="/items/item[@name=       'meleeToolStoneAxe']/property[@name='SellableToTrader']/@value">true</set>
 	<set xpath="/items/item[@name=           'meleeClubWood']/property[@name='SellableToTrader']/@value">true</set>
 	<set xpath="/items/item[@name=    'meleeToolShovelStone']/property[@name='SellableToTrader']/@value">true</set>
@@ -162,9 +164,9 @@
 	meleeToolSledgehammer 42              27.6             34                    500
 	meleeClubWood         16              15.3             55                    5
 	meleeClubIron         21              16.1             52                    250 (orig 350)
-	meleeBoneShiv         16              13.5             55                    34
-	meleeToolHuntingKnife 13              12.3             60                    300
-	meleeToolMachete      20              15.8             50	                 600
+	meleeToolFireaxeSteel         16              13.5             55                    34
+	meleeToolKnifeIron 13              12.3             60                    300
+	meleeToolKnifeMachete      20              15.8             50	                 600
 	-->
 
 	
@@ -1871,7 +1873,7 @@
      MODTAG Remove magazine perks and replace them with recipe books and valuable 
 	 books. This mod consists of item changes (here) and loot changes in loot.xml
 	 =========================================================================== -->
-	<!-- purge -->
+	<!-- Removed for A18 
 	<remove xpath="/items/item[@name='magazinePerkGunslinger']"/>
 	<remove xpath="/items/item[@name='magazinePerkShotgunMessiah']"/>
 	<remove xpath="/items/item[@name='magazinePerkAutomaticWeapons']"/>
@@ -1917,7 +1919,7 @@
 	<remove xpath="/items/item[@name='magazinePerkYeahScience']"/>
 	<remove xpath="/items/item[@name='magazinePerkPhysician']"/>
 	<remove xpath="/items/item[@name='magazinePerkMasterChef']"/>
-
+-->
 <!-- create -->
 <append xpath="/items">
 <!-- ================= -->
@@ -2697,12 +2699,12 @@
 	<property name="EconomicValue"    value="200"/>
 	
 	<property class="Action0">
-		<requirement name="CVarCompare" cvar="meleeToolHuntingKnife" operation="Equals" value="0"/>
+		<requirement name="CVarCompare" cvar="meleeToolKnifeIron" operation="Equals" value="0"/>
 	</property>
 	
 	<effect_group tiered="false">		
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveSkillExp" target="self" skill="attIntellect" experience="2450"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolHuntingKnife" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolKnifeIron" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" target="self" message="Recipe Unlocked: Hunting Knife"/> 
 	</effect_group>
 </item>
@@ -2713,7 +2715,7 @@
 
 	<effect_group tiered="false">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveSkillExp" target="self" skill="attIntellect" experience="2650"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolMachete" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolKnifeMachete" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" target="self" message="Recipe Unlocked: Machete"/> 
 	</effect_group>
 </item>
