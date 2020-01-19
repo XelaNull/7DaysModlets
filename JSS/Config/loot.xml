@@ -302,7 +302,7 @@
 		<item name="oldCash" count="50,200"/>
 		<item group="cannedfood" />
 		<item group="books"      />
-		<item name ="cigar"      />
+		<item name ="apparelCigar"      />
 		<item group="medicine"   />
 	</lootgroup>
 </insertBefore>

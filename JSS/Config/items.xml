@@ -62,12 +62,12 @@
 	<set xpath="/items/item[@name='foodCornOnTheCob']/property[@name='EconomicValue']/@value">10</set>
 
 	<!-- MODTAG basic tools are not worth much but trader should still buy them because that's what he's there for -->
-	<set xpath="/items/item[@name=           'meleeToolFireaxeSteel']/property[@name='SellableToTrader']/@value">true</set>
+	<append xpath="/items/item[@name='meleeToolFireaxeSteel']"><property name="SellableToTrader" value="true"/></append>
 	<set xpath="/items/item[@name=       'meleeToolStoneAxe']/property[@name='SellableToTrader']/@value">true</set>
 	<set xpath="/items/item[@name=           'meleeClubWood']/property[@name='SellableToTrader']/@value">true</set>
 	<set xpath="/items/item[@name=    'meleeToolShovelStone']/property[@name='SellableToTrader']/@value">true</set>
-	<set xpath="/items/item[@name=            'gunWoodenBow']/property[@name='SellableToTrader']/@value">true</set>
-	<set xpath="/items/item[@name='plantFiberClothingMaster']/property[@name='SellableToTrader']/@value">true</set>
+	<set xpath="/items/item[@name=            'gunBowWooden']/property[@name='SellableToTrader']/@value">true</set>
+	<set xpath="/items/item[@name='apparelPlantFiberMaster']/property[@name='SellableToTrader']/@value">true</set>
 
 	<!-- MODTAG make all resource crops sellable -->
 	<append xpath="/items/item[@name=    'resourceCropGoldenrodPlant']"><property name="SellableToTrader" value="true"/></append>
@@ -126,8 +126,8 @@
 	<set xpath="/items/item[@name='medicalBloodBag']/property[@name='EconomicValue']/@value">12</set>
 	
 	<!-- 1 femur + 1 water makes glue , femur worth 5, jar worth 6 -->	
-	<set xpath="/items/item[@name='resourceFemur']/property[@name='SellableToTrader']/@value">true</set>
-	<set xpath="/items/item[@name='resourceFemur']/property[@name='EconomicValue']/@value">5</set>	
+	<set xpath="/items/item[@name='resourceBone']/property[@name='SellableToTrader']/@value">true</set>
+	<set xpath="/items/item[@name='resourceBone']/property[@name='EconomicValue']/@value">5</set>	
 
 	<!-- establish proper valuation for steak and potato -->
 	<set xpath="/items/item[@name='foodSteakAndPotato']/property[@name='EconomicBundleSize']/@value">1</set>
@@ -143,15 +143,15 @@
 	<set xpath="/items/item[@name='meleeClubIron']/property[@name='EconomicValue']/@value">250</set>
 
 	<!-- RATIONAL BULET VALUES = entity damage / 4 + 3 -->	
-	<set xpath="/items/item[@name='ammo9mmBullet']/property[@name='EconomicValue']/@value">          11</set>  <!-- 32 -->
-	<set xpath="/items/item[@name='ammo9mmBulletJHP']/property[@name='EconomicValue']/@value">       12</set>  <!-- 35 -->
-	<set xpath="/items/item[@name='ammo9mmBulletSteel']/property[@name='EconomicValue']/@value">     10</set>  <!-- 29 -->
-	<set xpath="/items/item[@name='ammo44MagnumBullet']/property[@name='EconomicValue']/@value">     23</set>  <!-- 80-->
-	<set xpath="/items/item[@name='ammo44MagnumBulletAP']/property[@name='EconomicValue']/@value">   23</set>  <!-- 80 -->
-	<set xpath="/items/item[@name='ammo44MagnumBulletSteel']/property[@name='EconomicValue']/@value">22</set>  <!-- 76 -->
-	<set xpath="/items/item[@name='ammo762mmBulletFMJ']/property[@name='EconomicValue']/@value">     16</set>  <!-- 50 -->
+	<set xpath="/items/item[@name='ammoBundle9mmBulletHP']/property[@name='EconomicValue']/@value">          11</set>  <!-- 32 -->
+	<set xpath="/items/item[@name='ammoBundle9mmBulletHPJHP']/property[@name='EconomicValue']/@value">       12</set>  <!-- 35 -->
+	<set xpath="/items/item[@name='ammoBundle9mmBulletAP']/property[@name='EconomicValue']/@value">     10</set>  <!-- 29 -->
+	<set xpath="/items/item[@name='ammoBundle44MagnumBulletHP']/property[@name='EconomicValue']/@value">     23</set>  <!-- 80-->
+	<set xpath="/items/item[@name='ammoBundle44MagnumBulletHPAP']/property[@name='EconomicValue']/@value">   23</set>  <!-- 80 -->
+	<set xpath="/items/item[@name='ammoBundle44MagnumBulletAP']/property[@name='EconomicValue']/@value">22</set>  <!-- 76 -->
+	<set xpath="/items/item[@name='ammo762mmBulletHP']/property[@name='EconomicValue']/@value">     16</set>  <!-- 50 -->
 	<set xpath="/items/item[@name='ammo762mmBulletAP']/property[@name='EconomicValue']/@value">      16</set>  <!-- 50 -->
-	<set xpath="/items/item[@name='ammo762mmBulletFMJSteel']/property[@name='EconomicValue']/@value">15</set>  <!-- 46 -->
+	<set xpath="/items/item[@name='ammo762mmBulletAP']/property[@name='EconomicValue']/@value">15</set>  <!-- 46 -->
 	<set xpath="/items/item[@name='ammoShotgunShell']/property[@name='EconomicValue']/@value">       27</set>  <!-- 96 -->
 	<set xpath="/items/item[@name='ammoShotgunSlug']/property[@name='EconomicValue']/@value">        23</set>  <!-- 80 -->
 	<set xpath="/items/item[@name='ammoBlunderbuss']/property[@name='EconomicValue']/@value">        23</set>  <!-- 88 -->
@@ -1821,8 +1821,10 @@
 <!-- =================================================================================== -->
 <!-- MODTAG remove chance for sickness from fresh yucca fruit                            -->
 <!-- =================================================================================== -->
+<!-- Removed for A18
 <set xpath="/items/item[@name='foodCropYuccaFruit']/effect_group/display_value[@name='FoodPoisoningRisk']/@value">0</set>
 <set xpath="/items/item[@name='foodCropYuccaFruit']/effect_group/triggered_effect[@buff='buffIllFoodPoisoning0']/requirement[@name='RandomRoll']/@value">0</set>
+-->
 
 <!-- =================================================================================== -->
 <!-- MODTAG Create a new quest note item to give player after basic survival.            -->
@@ -2762,8 +2764,8 @@
 	<effect_group tiered="false">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveSkillExp" target="self" skill="attIntellect" experience="3450"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunPistol" operation="set" value="1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo9mmBullet" operation="set" value="1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo9mmBulletSteel" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammoBundle9mmBulletHP" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammoBundle9mmBulletAP" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceBulletCasing" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceBulletCasingSteel" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceBulletTip" operation="set" value="1"/>
@@ -2783,8 +2785,8 @@
 	<effect_group tiered="false">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveSkillExp" target="self" skill="attIntellect" experience="3450"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunHuntingRifle" operation="set" value="1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo762mmBulletFMJ" operation="set" value="1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo762mmBulletFMJSteel" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo762mmBulletHP" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo762mmBulletAP" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceBulletCasing" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceBulletCasingSteel" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceBulletTip" operation="set" value="1"/>
@@ -2842,8 +2844,8 @@
 	<effect_group tiered="false">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveSkillExp" target="self" skill="attIntellect" experience="5450"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gun44Magnum" operation="set" value="1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo44MagnumBullet" operation="set" value="1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo44MagnumBulletSteel" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammoBundle44MagnumBulletHP" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammoBundle44MagnumBulletAP" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceBulletCasing" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceBulletCasingSteel" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceBulletTip" operation="set" value="1"/>
@@ -2865,8 +2867,8 @@
 	<effect_group tiered="false">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveSkillExp" target="self" skill="attIntellect" experience="5550"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunAK47" operation="set" value="1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo762mmBulletFMJ" operation="set" value="1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo762mmBulletFMJSteel" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo762mmBulletHP" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo762mmBulletAP" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceBulletCasing" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceBulletCasingSteel" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceBulletTip" operation="set" value="1"/>
@@ -2886,8 +2888,8 @@
 	<effect_group tiered="false">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveSkillExp" target="self" skill="attIntellect" experience="4450"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunSMG5" operation="set" value="1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo9mmBullet" operation="set" value="1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo9mmBulletSteel" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammoBundle9mmBulletHP" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammoBundle9mmBulletAP" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceBulletCasing" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceBulletCasingSteel" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceBulletTip" operation="set" value="1"/>
@@ -2907,8 +2909,8 @@
 	<effect_group tiered="false">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveSkillExp" target="self" skill="attIntellect" experience="4450"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunMR10" operation="set" value="1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo762mmBulletFMJ" operation="set" value="1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo762mmBulletFMJSteel" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo762mmBulletHP" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo762mmBulletAP" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceBulletCasing" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceBulletCasingSteel" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceBulletTip" operation="set" value="1"/>
@@ -2963,8 +2965,8 @@
 	<effect_group tiered="false">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveSkillExp" target="self" skill="attIntellect" experience="3450"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="autoTurret" operation="set" value="1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo9mmBullet" operation="set" value="1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo9mmBulletSteel" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammoBundle9mmBulletHP" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammoBundle9mmBulletAP" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceBulletCasing" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceBulletCasingSteel" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceBulletTip" operation="set" value="1"/>
@@ -3533,8 +3535,8 @@
 
 
 <!-- MODTAG make puffer coat bad for hot weather (duh) -->
-<remove xpath="/items/item[@name='pufferCoat']/effect_group/passive_effect[@name='HyperthermalResist']"/>
-<append xpath="/items/item[@name='pufferCoat']/effect_group">
+<remove xpath="/items/item[@name='apparelCoatPufferCoat']/effect_group/passive_effect[@name='HyperthermalResist']"/>
+<append xpath="/items/item[@name='apparelCoatPufferCoat']/effect_group">
 	<passive_effect name="HyperthermalResist" operation="base_subtract" value="5"/>
 </append>
 	
