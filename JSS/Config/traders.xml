@@ -2,7 +2,7 @@
 
 <!-- remove perk magazines from trader inventory -->
 <remove xpath="/traders/trader_item_groups/trader_item_group[@name='books']"/>
-<!-- <remove xpath="/traders/trader_item_groups/trader_item_group[@name='perkMagazines']"/> --></remove>
+<!-- <remove xpath="/traders/trader_item_groups/trader_item_group[@name='perkMagazines']"/> -->
 <!-- remove the generic meat food items from trader inventory -->
 <remove xpath="/traders/trader_item_groups/trader_item_group[@name='preparedFood']/item[@name='foodBoiledMeat']"/>
 <remove xpath="/traders/trader_item_groups/trader_item_group[@name='preparedFood']/item[@name='foodGrilledMeat']"/>
