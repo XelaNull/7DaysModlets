@@ -270,18 +270,18 @@ Notes about quests
 <remove xpath="/quests/quest[@id='tier1_buried_supplies']"/>
 <remove xpath="/quests/quest[@id='tier2_clear']"/>          
 <remove xpath="/quests/quest[@id='tier2_fetch']"/>          
-<remove xpath="/quests/quest[@id='tier2_hidden_cache']"/>   
+<remove xpath="/quests/quest[@id='tier2_buried_supplies']"/>   
 <remove xpath="/quests/quest[@id='tier2_fetch_clear']"/>    
 <remove xpath="/quests/quest[@id='tier3_clear']"/>          
 <remove xpath="/quests/quest[@id='tier3_fetch']"/>          
-<remove xpath="/quests/quest[@id='tier3_hidden_cache']"/>   
+<!-- Removed for A18 <remove xpath="/quests/quest[@id='tier3_hidden_cache']"/>    -->
 <remove xpath="/quests/quest[@id='tier3_fetch_clear']"/>    
-<remove xpath="/quests/quest[@id='tier3_hidden_clear']"/>   
+<!-- Removed for A18 <remove xpath="/quests/quest[@id='tier3_hidden_clear']"/>   -->
 <remove xpath="/quests/quest[@id='tier4_clear']"/>          
 <remove xpath="/quests/quest[@id='tier4_fetch']"/>          
-<remove xpath="/quests/quest[@id='tier4_hidden_cache']"/>   
+<!-- Removed for A18 <remove xpath="/quests/quest[@id='tier4_hidden_cache']"/>   -->
 <remove xpath="/quests/quest[@id='tier4_fetch_clear']"/>    
-<remove xpath="/quests/quest[@id='tier4_hidden_clear']"/>   
+<!-- Removed for A18 <remove xpath="/quests/quest[@id='tier4_hidden_clear']"/>   -->
 
 <insertBefore xpath="/quests/quest_list[@id='trader_quests']">
 
@@ -699,8 +699,8 @@ Notes about quests
 	</quest>
 
 
-	<quest id="tier2_hidden_cache">
-		<property name="name_key" value="quest_tier2_hidden_cache" />
+	<quest id="tier2_buried_supplies">
+		<property name="name_key" value="quest_tier2_buried_supplies" />
 		<property name="subtitle_key" value="quest_hidden_cache_subtitle" />
 		<property name="description_key" value="quest_hidden_cache_description" />
 		<property name="icon" value="ui_game_symbol_quest" />
@@ -708,7 +708,7 @@ Notes about quests
 		<property name="category_key" value="challenge" />
 		<property name="difficulty" value="medium" />
 		<property name="difficulty_tier" value="2" />
-		<property name="offer_key" value="quest_tier2_hidden_cache_offer" />
+		<property name="offer_key" value="quest_tier2_buried_supplies_offer" />
 		<property name="statement_key" value="quest_hidden_cache_statement" />
 		<property name="response_key" value="quest_hidden_cache_response" />
 		<property name="login_rally_reset" value="true" />
@@ -757,6 +757,7 @@ Notes about quests
 		<reward type="LootItem" id="questMods" ischosen="true" value="3" />
 	</quest>
 
+<!-- Removed for A18
 	<quest id="tier3_hidden_cache">
 		<property name="name_key" value="quest_tier3_hidden_cache" />
 		<property name="subtitle_key" value="quest_hidden_cache_subtitle" />
@@ -814,7 +815,9 @@ Notes about quests
 		<reward type="LootItem" id="questSchematics" ischosen="true" value="4" />
 		<reward type="LootItem" id="questMods" ischosen="true" value="4" />
 	</quest>
+-->
 
+<!-- Removed for A18
 	<quest id="tier4_hidden_cache">
 		<property name="name_key" value="quest_tier4_hidden_cache" />
 		<property name="subtitle_key" value="quest_hidden_cache_subtitle" />
@@ -872,7 +875,7 @@ Notes about quests
 		<reward type="LootItem" id="questSchematics" ischosen="true" value="5" />
 		<reward type="LootItem" id="questMods" ischosen="true" value="5" />
 	</quest>
-
+-->
 	
 
 	<quest id="tier2_fetch_clear">
@@ -1061,7 +1064,7 @@ Notes about quests
 
 	</quest>
 
-
+<!-- Removed for A18
 	<quest id="tier3_hidden_clear">
 		<property name="name_key" value="quest_tier3_hidden_clear" />
 		<property name="subtitle_key" value="quest_hidden_clear_subtitle" />
@@ -1124,7 +1127,8 @@ Notes about quests
 		<reward type="LootItem" id="questMods" ischosen="true" value="4" />
 
 	</quest>
-
+-->
+<!-- Removed for A18
 	<quest id="tier4_hidden_clear">
 		<property name="name_key" value="quest_tier4_hidden_clear" />
 		<property name="subtitle_key" value="quest_hidden_clear_subtitle" />
@@ -1187,7 +1191,7 @@ Notes about quests
 		<reward type="LootItem" id="questMods" ischosen="true" value="5" />
 
 	</quest>
-
+-->
 	<quest id="tier1_buried_supplies">
 		<property name="name_key" value="quest_tier1_buried_supplies" />
 		<property name="subtitle_key" value="quest_buried_supplies_subtitle" />
